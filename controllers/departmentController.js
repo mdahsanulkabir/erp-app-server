@@ -4,9 +4,9 @@ const prisma = new PrismaClient();
 const getAllDepartments = async (req, res) => {
     try {
         const allDept = await prisma.department.findMany()
-        res.send(allDept)
+        res.status(200).json(allDept)
     } catch (err) {
-        console.log(err)
+        res.status(500).json({ 'message': err.message });
     }
 }
 
@@ -21,9 +21,9 @@ const createDepartment = async (req, res) => {
             },
         })
         console.log({...newDepartment})
-        res.send(newDepartment)
+        res.status(201).json({ 'success': `New user created!`, newDepartment });
     } catch (err) {
-        console.log(err)
+        res.status(500).json({ 'message': err.message });
     }
 }
 
