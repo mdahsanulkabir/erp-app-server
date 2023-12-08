@@ -12,11 +12,20 @@ const handleRefreshToken = async (req, res) => {
     jwt.verify(
         refreshToken,
         process.env.REFRESH_TOKEN_SECRET,
-        (err, decoded) => {
-            if (err) return res.sendStatus(403)
+        async (err, decoded) => {
+            if (err) return res.sendStatus(403);
+            const user = await prisma.user.findUnique({
+                where: {
+                    userEmail: decoded.userEmail,
+                },
+                include: {
+                    roles: true,
+                },
+            })
             const accessToken = jwt.sign(
                 {   //payload
-                    "userEmail": decoded.userEmail
+                    "userEmail": decoded.userEmail,
+                    "roles": user.roles.map(roleId => (roleId.id))
                 },
                 process.env.ACCESS_TOKEN_SECRET,
                 {

@@ -11,7 +11,7 @@ const credentials = require('./middleware/credential/credentials.js')
 const PORT = process.env.PORT || 5000;
 
 app.use(logger);
-// app.use(credentials)
+app.use(credentials)       //for frontend
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(cookieParser());
@@ -28,6 +28,7 @@ app.use('/register-user', require('./routes/admin/register'));
 app.use('/getUsers', require('./routes/admin/user'));
 app.use("/department", require("./routes/admin/department"));
 app.use('/role', require("./routes/admin/role"));
+app.use('/updateUser', require('./routes/admin/updateUser'))
 
 
 

@@ -15,14 +15,20 @@ const handleLogin = async (req, res) => {
             where: {
                 userEmail,
             },
+            include: {
+                roles: true,
+            },
         })
         if (!user) return res.sendStatus(401)
+        console.log(user)
+        const userRoles = user.roles.map(roleId => (roleId.id));
 
         const authenticatedUser = await bcrypt.compare(password, user.password);
         if (authenticatedUser) {
             const accessToken = jwt.sign(
                 {   //payload
-                    "userEmail": user.userEmail
+                    "userEmail": user.userEmail,
+                    "roles": userRoles
                 },
                 process.env.ACCESS_TOKEN_SECRET,
                 {
@@ -52,9 +58,15 @@ const handleLogin = async (req, res) => {
                 },
             });
 
-            console.log(updatedUser)
-            res.cookie('jwt', refreshToken, { httpOnly: true, maxAge: 24*60*60*1000})
-            res.status(200).json({ accessToken })
+            console.log({updatedUser})
+            res.cookie('jwt', refreshToken, { 
+                httpOnly: true, 
+                //sameSite:'None',//sameSite issue creates in front end site because the front and back are not in same domain
+                //secure: true, //secure is for https
+                maxAge: 24*60*60*1000}) 
+            
+            console.log({accessToken})
+            res.status(200).json({ accessToken, roles: userRoles })
         } else {
             res.status(401).json({'Error': `User ${user.userName} is unauthenticated.`})
         }

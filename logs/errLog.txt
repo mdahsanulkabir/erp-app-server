@@ -6,3 +6,20 @@
 20231130	17:51:50	dfab4636-4f93-486c-999a-434cf121a6c4	TypeError: Cannot read properties of undefined (reading 'split')
 20231130	18:59:41	a486fef9-a8f6-4269-a823-907ff2d54b9c	TypeError: Cannot read properties of undefined (reading 'split')
 20231130	19:08:31	25c0a63b-5dc2-42fe-9271-bc2fd3897987	TypeError: Cannot read properties of undefined (reading 'split')
+20231208	10:43:00	ce99ad23-b5fd-40e2-a8e7-d46602745468	TypeError: Cannot read properties of undefined (reading 'split')
+20231208	10:45:29	a63c6a2f-ded8-4eee-9e56-ad8edf767d79	SyntaxError: Unexpected token A in JSON at position 0
+20231208	10:45:52	93814aec-eeee-4902-a71a-3a810d1961ab	SyntaxError: Unexpected token A in JSON at position 0
+20231208	10:46:07	dac189a0-0713-4233-abc5-8e4588c3a6a4	SyntaxError: Unexpected token A in JSON at position 0
+20231208	10:46:34	66db219a-a708-4ea3-b3b8-217b51f62f35	SyntaxError: Unexpected token A in JSON at position 0
+20231208	10:46:39	8e197f0c-be4c-4d0d-954a-3105ae0dfa6d	TypeError: Cannot read properties of undefined (reading 'split')
+20231208	10:49:40	02a8c581-184f-43d0-9284-cbd8cfa45fd4	TypeError: Cannot read properties of undefined (reading 'split')
+20231208	12:08:58	88c7233c-fc79-4a12-a61b-8f19ca8e10a7	SyntaxError: Unexpected token } in JSON at position 70
+20231208	12:14:03	367fba94-6608-4a33-ba40-fc600b4bdd38	SyntaxError: Unexpected token } in JSON at position 70
+20231208	12:19:59	c1f98c14-a526-4a60-959d-ef32073f4d57	SyntaxError: Unexpected token } in JSON at position 66
+20231208	12:20:56	5b8e3c0f-d5b5-4a81-99d3-ccf6c5a7810e	SyntaxError: Unexpected token } in JSON at position 66
+20231208	12:25:01	f1e1cb33-6c49-4953-871c-f6dc2ce1459b	SyntaxError: Unexpected token } in JSON at position 66
+20231208	12:25:43	d752fafe-59f4-4b9b-b6e5-70b639e00864	SyntaxError: Unexpected token } in JSON at position 66
+20231208	12:25:59	be3ea916-5361-45be-8332-d7c9d108299c	SyntaxError: Unexpected token } in JSON at position 66
+20231208	12:26:26	7510e724-a768-4a43-90cd-94944e4be9a5	SyntaxError: Unexpected token } in JSON at position 66
+20231208	12:27:31	9821004c-dd86-4a09-9f0b-6ae2d76e2f34	TypeError: Cannot read properties of undefined (reading 'split')
+20231208	12:28:29	5b7d2cfb-67b5-4aec-b003-c188b8d6c16c	SyntaxError: Unexpected token } in JSON at position 66

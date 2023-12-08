@@ -5,7 +5,7 @@ require('dotenv').config();
 
 
 const handleLogout = async (req, res) => {
-    console.log(req.cookies)
+
     const cookies = req.cookies;
     if (!cookies?.jwt) 
         return res.sendStatus(204); //no content
@@ -34,10 +34,10 @@ const handleLogout = async (req, res) => {
             }
 
 
-            console.log(user)
+            // console.log(user)
             const newRefreshTokens = user.refreshToken.filter(token => token !== refreshToken)
 
-            console.log({"remainTokens": newRefreshTokens})
+            // console.log({"remainTokens": newRefreshTokens})
 
             const result = await prisma.user.update({
                 where: {
@@ -52,8 +52,8 @@ const handleLogout = async (req, res) => {
             console.log(result)
             res.clearCookie('jwt', { 
                 httpOnly: true, 
-                // sameSite: 'None', 
-                // secure: true 
+                // sameSite: 'None', //frr frontend issue... supposed to be same site if set not none
+                // secure: true // for https
             })
             res.sendStatus(204)
         }

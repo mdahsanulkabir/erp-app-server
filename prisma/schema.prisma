@@ -25,7 +25,7 @@ model User {
   userDepartment Department       @relation(fields: [deptId], references: [id])
   deptId         String
   status         UserActiveStatus @default(INACTIVE)
-  roles          Role[]
+  roles          Role[] 
   password       String
   refreshToken   String[]
 }
