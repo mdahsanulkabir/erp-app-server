@@ -28,11 +28,12 @@ const handleLogin = async (req, res) => {
             const accessToken = jwt.sign(
                 {   //payload
                     "userEmail": user.userEmail,
+                    "userName": user.userName,
                     "roles": userRoles
                 },
                 process.env.ACCESS_TOKEN_SECRET,
                 {
-                    expiresIn: '1d'
+                    expiresIn: '10h'
                 }
             )
             const refreshToken = jwt.sign(
@@ -66,7 +67,7 @@ const handleLogin = async (req, res) => {
                 maxAge: 24*60*60*1000}) 
             
             console.log({accessToken})
-            res.status(200).json({ accessToken, roles: userRoles })
+            res.status(200).json({ accessToken, roles: userRoles, userName: user.userName })
         } else {
             res.status(401).json({'Error': `User ${user.userName} is unauthenticated.`})
         }

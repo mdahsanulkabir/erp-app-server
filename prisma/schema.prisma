@@ -10,24 +10,48 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+// User related tables
+
 model Department {
-  id             String @id @default(uuid())
-  departmentName String @unique
-  User           User[]
+  id             String    @id @default(uuid())
+  departmentName String    @unique
+  User           User[]    @relation("userDepartmentRelation")
+  createdAt      DateTime  @default(now()) @map("created_at")
+  userId         String
+  updatedAt      DateTime? @updatedAt @map("updated_at")
+  updateReasons  String    @default("new department")
 }
 
 model User {
-  id             String           @id @default(uuid())
-  userArcelikId  Int              @unique
-  userSingerId   String?          @unique
-  userEmail      String           @unique
-  userName       String
-  userDepartment Department       @relation(fields: [deptId], references: [id])
-  deptId         String
-  status         UserActiveStatus @default(INACTIVE)
-  roles          Role[] 
-  password       String
-  refreshToken   String[]
+  id                        String                      @id @default(uuid())
+  userArcelikId             Int                         @unique
+  userSingerId              String?                     @unique
+  userEmail                 String                      @unique
+  userName                  String
+  userDepartment            Department                  @relation("userDepartmentRelation", fields: [deptId], references: [id])
+  deptId                    String
+  status                    UserActiveStatus            @default(INACTIVE)
+  roles                     Role[]
+  password                  String
+  refreshToken              String[]
+  createdAt                 DateTime                    @default(now()) @map("created_at")
+  updatedAt                 DateTime?                   @updatedAt @map("updated_at")
+  updateReasons             String                      @default("new user")
+  comment                   String?
+  RmUnit                    RmUnit[]
+  RmSource                  RmSource[]
+  RM                        RM[]
+  SFGBOM                    SFGBOM[]
+  MRPBOM                    MRPBOM[]
+  ExternalContact           ExternalContact[]
+  Supplier                  Supplier[]
+  SupplierRM                SupplierRM[]
+  ImportRmRequirementTag    ImportRmRequirementTag[]
+  ImportRmRequirementDetail ImportRmRequirementDetail[]
+  ImportPO                  ImportPO[]
+  Shipment                  Shipment[]
+  ImportPODetails           ImportPODetails[]
+  Bank                      Bank[]
 }
 
 enum UserActiveStatus {
@@ -36,18 +60,353 @@ enum UserActiveStatus {
 }
 
 model Role {
-  id       Int    @id @unique
-  roleName String @unique
-  users    User[]
+  id            Int       @id @unique
+  roleName      String    @unique
+  users         User[]
+  createdAt     DateTime  @default(now()) @map("created_at")
+  userId        String
+  updatedAt     DateTime? @updatedAt @map("updated_at")
+  updateReasons String    @default("new user role")
+  comment       String?
 }
 
-// model RoleUser {
-//   id     Int   @id @default(autoincrement())
-//   userId Int
-//   roleId Int
+// Product related tables
 
-//   user   User  @relation(fields: [userId], references: [id])
-//   role   Role  @relation(fields: [roleId], references: [id])
+model ProductBase {
+  id                    String              @id @default(uuid())
+  baseProduct           String              @unique
+  sourceCategory        SourceCategory[]
+  productCapacityUnit   ProductCapacityUnit @relation(fields: [productCapacityUnitId], references: [id])
+  productCapacityUnitId String
+  SKU                   SKU[]
+  createdAt             DateTime            @default(now()) @map("created_at")
+  userId                String
+  updatedAt             DateTime?           @updatedAt @map("updated_at")
+  updateReasons         String              @default("new product base")
+  comment               String?
+}
 
-//   @@unique([userId, roleId])
-// }
+model SourceCategory {
+  id             String      @id @default(uuid())
+  sourceCategory String      @unique
+  productBase    ProductBase @relation(fields: [productBaseId], references: [id])
+  productBaseId  String
+  createdAt      DateTime    @default(now()) @map("created_at")
+  userId         String
+  updatedAt      DateTime?   @updatedAt @map("updated_at")
+  updateReasons  String      @default("new source category")
+  comment        String?
+}
+
+model ProductCapacityUnit {
+  id                  String        @id @default(uuid())
+  productCapacityUnit String        @unique
+  productBase         ProductBase[]
+  createdAt           DateTime      @default(now()) @map("created_at")
+  userId              String
+  updatedAt           DateTime?     @updatedAt @map("updated_at")
+  updateReasons       String        @default("new product capacity unit")
+  comment             String?
+}
+
+model ProductVariant {
+  id             String    @id @default(uuid())
+  productVariant String    @unique
+  sku            SKU[]
+  comment        String?
+  createdAt      DateTime  @default(now()) @map("created_at")
+  userId         String
+  updatedAt      DateTime? @updatedAt @map("updated_at")
+  updateReasons  String    @default("new product variant")
+}
+
+model SeriesCategory {
+  id            String    @id @default(uuid())
+  seriesName    String    @unique
+  sku           SKU[]
+  createdAt     DateTime  @default(now()) @map("created_at")
+  userId        String
+  updatedAt     DateTime? @updatedAt @map("updated_at")
+  updateReasons String    @default("new product series category")
+  comment       String?
+}
+
+model SKU {
+  id               String          @id @default(uuid())
+  skuCode          String          @unique
+  skuSAPCode       String          @unique
+  variant          ProductVariant  @relation(fields: [productVariantId], references: [id])
+  productVariantId String
+  productBase      ProductBase     @relation(fields: [productBaseId], references: [id])
+  productBaseId    String
+  productCapacity  Int
+  SeriesCategory   SeriesCategory? @relation(fields: [seriesCategoryId], references: [id])
+  seriesCategoryId String?
+  feature          Json?
+  picture1         String?
+  picture2         String?
+  picture3         String?
+  picture4         String?
+  picture5         String?
+  obsolete         Boolean         @default(false)
+  comment          String?
+  createdAt        DateTime        @default(now()) @map("created_at")
+  userId           String
+  updatedAt        DateTime?       @updatedAt @map("updated_at")
+  updateReasons    String          @default("new sku")
+  MRPBOM           MRPBOM[]
+}
+
+// raw materials and BOM related tables
+
+model RmUnit {
+  id            String       @id @default(uuid())
+  rmUnit        String       @unique
+  RM            RM[]
+  createdAt     DateTime     @default(now()) @map("created_at")
+  createdBy     User         @relation(fields: [userId], references: [id])
+  userId        String
+  updatedAt     DateTime?    @updatedAt @map("updated_at")
+  updateReasons String       @default("new rm unit")
+  comment       String?
+  SupplierRM    SupplierRM[]
+}
+
+model RmSource {
+  id            String    @id @default(uuid())
+  rmSource      String    @unique //section, 3rd party, import, local, no po
+  RM            RM[]
+  createdAt     DateTime  @default(now()) @map("created_at")
+  createdBy     User      @relation(fields: [userId], references: [id])
+  userId        String
+  updatedAt     DateTime? @updatedAt @map("updated_at")
+  updateReasons String    @default("new RM source")
+  comment       String?
+}
+
+model RM {
+  id                        String                      @id @default(uuid())
+  objectId                  String                      @unique
+  sisCode                   String                      @unique
+  sapCode                   String                      @unique
+  objectName                String                      @unique
+  alternativeName           String?
+  rmUnit                    RmUnit                      @relation(fields: [rmUnitId], references: [id])
+  rmUnitId                  String
+  rmSource                  RmSource[]
+  dimension                 String?
+  drawing                   String?
+  color                     String?
+  picture1                  String?
+  picture2                  String?
+  picture3                  String?
+  picture4                  String?
+  picture5                  String?
+  createdAt                 DateTime                    @default(now()) @map("created_at")
+  createdBy                 User                        @relation(fields: [userId], references: [id])
+  userId                    String
+  updatedAt                 DateTime?                   @updatedAt @map("updated_at")
+  updateReasons             String                      @default("new RM")
+  comment                   String?
+  obsolete                  Boolean                     @default(false)
+  ImportRmRequirementDetail ImportRmRequirementDetail[]
+  SupplierRM                SupplierRM[]
+  hsCode                    String                      @default("n/a")
+  wastagePercentageForOrder Int?
+  MRPBOM                    MRPBOM[]
+  SFGBOMAsSFG               SFGBOM[]                    @relation("SFGRelation")
+  SFGBOMAsComponent         SFGBOM[]                    @relation("ComponentRelation")
+}
+
+model SFGBOM {
+  id                String    @id @default(uuid())
+  sfg               RM        @relation("SFGRelation", fields: [sfgObjectId], references: [id]) //! for the starting point, we can consider the SKU as a SFG rm and include in RM table
+  sfgObjectId       String
+  component         RM        @relation("ComponentRelation", fields: [componentObjectId], references: [id])
+  componentObjectId String
+  componentQuantity Float
+  createdAt         DateTime  @default(now()) @map("created_at")
+  createdBy         User      @relation(fields: [userId], references: [id])
+  userId            String
+  updatedAt         DateTime? @updatedAt @map("updated_at")
+  updateReasons     String    @default("new SFGBOM entry")
+  comment           String?
+}
+
+model MRPBOM {
+  id         String    @id @default(uuid())
+  SKU        SKU       @relation(fields: [skuCode], references: [id])
+  skuCode    String
+  RM         RM        @relation(fields: [objectId], references: [id])
+  objectId   String
+  rmQuantity Float
+  createdAt  DateTime  @default(now()) @map("created_at")
+  createdBy  User      @relation(fields: [userId], references: [id])
+  userId     String
+  updatedAt  DateTime? @updatedAt @map("updated_at")
+  comment    String?
+}
+
+// supplier related tables
+
+model ExternalContact {
+  id            String     @id @default(uuid())
+  name          String
+  email         String     @unique
+  phone         String
+  Supplier      Supplier[]
+  createdAt     DateTime   @default(now()) @map("created_at")
+  createdBy     User       @relation(fields: [userId], references: [id])
+  userId        String
+  updatedAt     DateTime?  @updatedAt @map("updated_at")
+  updateReasons String     @default("new supplier contact")
+  comment       String?
+}
+
+model Supplier {
+  id                    String          @id @default(uuid())
+  supplierName          String          @unique
+  supplierAlternateName String          @unique
+  country               String
+  contactPerson         ExternalContact @relation(fields: [externalContactId], references: [id])
+  externalContactId     String
+  createdAt             DateTime        @default(now()) @map("created_at")
+  createdBy             User            @relation(fields: [userId], references: [id])
+  userId                String
+  updatedAt             DateTime?       @updatedAt @map("updated_at")
+  updateReasons         String          @default("new supplier")
+  comment               String?
+  supplierNotExist      Boolean         @default(false)
+  SupplierRM            SupplierRM[]
+  ImportPO              ImportPO[]
+}
+
+model SupplierRM {
+  id                        String            @id @default(uuid())
+  Supplier                  Supplier          @relation(fields: [supplierId], references: [id])
+  supplierId                String
+  RM                        RM[]
+  moq                       Int?
+  leadTimeToReadinessInDays Int?
+  supplierRmUnitConversion  Float             @default(1)
+  supplierRmUnit            RmUnit[] // multiply bom/requirement qty with 'supplierRmUnitConversion
+  pricePerUnit              Float?
+  ImportPODetails           ImportPODetails[]
+  createdAt                 DateTime          @default(now()) @map("created_at")
+  createdBy                 User              @relation(fields: [userId], references: [id])
+  userId                    String
+  updatedAt                 DateTime?         @updatedAt @map("updated_at")
+  updateReasons             String            @default("new supplier")
+  comment                   String?
+}
+
+//MRP related tables
+
+model ImportRmRequirementTag {
+  id                         String                      @id @default(uuid())
+  importRmRequirementTag     String                      @unique //include lot name, or extra requirement tag
+  publishAndLockedForNewItem Boolean                     @default(false) // if mumtarin publish a requirement list, then this tag will be locked for further addition of items. Minhaz can set this to false again. Then mumtarin can add items under tis tag. However if she want's to modify existing items on this tag, then 'RmRequirementDetail' related logic and code will be enough.
+  createdAt                  DateTime                    @default(now()) @map("created_at")
+  createdBy                  User                        @relation(fields: [userId], references: [id])
+  userId                     String
+  updatedAt                  DateTime?                   @updatedAt @map("updated_at")
+  updateReasons              String                      @default("new requirement tag added")
+  ImportRmRequirementDetail  ImportRmRequirementDetail[]
+  comment                    String?
+}
+
+model ImportRmRequirementDetail {
+  id                       String                 @id @default(uuid())
+  ImportRmRequirementTag   ImportRmRequirementTag @relation(fields: [importRmRequirementTagId], references: [id])
+  importRmRequirementTagId String
+  RM                       RM[]
+  rmQuantity               Int //this can be used to manually increase/decrease requirement of specific items //todo -> later, rmQuantity will come from MRP
+  requirementDate          DateTime
+  requirementLocked        Boolean                @default(false) //if the order creator starts the order then it will be 'true' the demand person cannot change without the approval of order person. this will be required during update by demand person. Because while the order starts and demand is changed, then it will create chaos. This field can be updated by the order person only. //! along with this, the whole reRequirementTag will be locked. need to implement in code. Code logic might be like -> create another table 'rmRequirementTagLock', and put the tag there. 
+  createdAt                DateTime               @default(now()) @map("created_at")
+  createdBy                User                   @relation(fields: [userId], references: [id])
+  userId                   String
+  updatedAt                DateTime?              @updatedAt @map("updated_at")
+  updateReasons            String                 @default("new requirement")
+  comment                  String?
+  ImportPODetails          ImportPODetails[]
+}
+
+// order related tables
+
+model ImportPO {
+  id                         String            @id @default(uuid())
+  trackingId                 String            @unique // RmRequirementTag + supplierAlternativeName + sapPOCode
+  trackingStatus             String            @default("PO Created")
+  sapPOCode                  String?           @unique
+  Supplier                   Supplier          @relation(fields: [supplierId], references: [id])
+  supplierId                 String
+  piCode                     String            @default("not available")
+  incoTerm                   String            @default("n/a")
+  expectedEtd                DateTime?
+  expectedEta                DateTime?
+  etd                        DateTime?
+  eta                        DateTime?
+  shipmentReadinessDate      DateTime?
+  ImportPODetails            ImportPODetails[]
+  Bank                       Bank?             @relation(fields: [bankId], references: [id])
+  bankId                     String?
+  lcNumber                   String?           @unique
+  inBoundLogisticsFileNumber String?           @unique
+  amount                     Float? //! update this if piQty is not blank in PODetails table
+  createdAt                  DateTime          @default(now()) @map("created_at")
+  createdBy                  User              @relation(fields: [userId], references: [id])
+  userId                     String
+  updatedAt                  DateTime?         @updatedAt @map("updated_at")
+  updateReasons              String            @default("new PO code generated")
+  comment                    String?
+  Shipment                   Shipment[]
+}
+
+model Shipment {
+  id              String    @id @default(uuid())
+  ImportPO        ImportPO  @relation(fields: [importPoId], references: [id])
+  importPoId      String
+  shipmentId      String // RmRequirementTag + supplierAlternativeName + sapPOCode + shipment_x_of_y
+  shipmentDate    DateTime
+  shipmentMode    String // air or ship
+  portArrivalDate String
+  BLDate          DateTime
+  BLReceiveDate   DateTime
+  BLNumber        String
+  createdAt       DateTime  @default(now()) @map("created_at")
+  createdBy       User      @relation(fields: [userId], references: [id])
+  userId          String
+  updatedAt       DateTime? @updatedAt @map("updated_at")
+  updateReasons   String    @default("new shipment info generated")
+  comment         String?
+}
+
+model ImportPODetails {
+  id                          String                    @id @default(uuid())
+  ImportRMRequirementDetail   ImportRmRequirementDetail @relation(fields: [ImportRmRequirementDetailId], references: [id])
+  ImportRmRequirementDetailId String
+  SupplierRM                  SupplierRM[]
+  ImportPO                    ImportPO                  @relation(fields: [importPoId], references: [id])
+  importPoId                  String
+  piQuantity                  Int? //! if supplier denies, then it should be zero. Modification reson should be provided and another PO need to create there after
+  createdAt                   DateTime                  @default(now()) @map("created_at")
+  createdBy                   User                      @relation(fields: [userId], references: [id])
+  userId                      String
+  updatedAt                   DateTime?                 @updatedAt @map("updated_at")
+  updateReasons               String                    @default("new PO details generated")
+  comment                     String?
+  //receiveStatus receive ......quantity ..........
+}
+
+model Bank {
+  id            String     @id @default(uuid())
+  bankName      String     @unique
+  createdAt     DateTime   @default(now()) @map("created_at")
+  createdBy     User       @relation(fields: [userId], references: [id])
+  userId        String
+  updatedAt     DateTime?  @updatedAt @map("updated_at")
+  updateReasons String     @default("new Bank created")
+  comment       String?
+  ImportPO      ImportPO[]
+}

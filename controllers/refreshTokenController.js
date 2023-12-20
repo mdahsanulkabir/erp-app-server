@@ -25,14 +25,20 @@ const handleRefreshToken = async (req, res) => {
             const accessToken = jwt.sign(
                 {   //payload
                     "userEmail": decoded.userEmail,
-                    "roles": user.roles.map(roleId => (roleId.id))
+                    "roles": user.roles.map(roleId => (roleId.id)),
+                    "userName": user.userName,
                 },
                 process.env.ACCESS_TOKEN_SECRET,
                 {
-                    expiresIn: '1d'
+                    expiresIn: '10h'
                 }
             );
-            res.json({ accessToken })
+            res.json({ 
+                accessToken,
+                roles: user.roles.map(roleId => (roleId.id)),
+                userName: user.userName,
+                userEmail: user.userEmail
+            })
         }
     )
 
