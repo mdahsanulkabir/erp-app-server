@@ -6,4 +6,5 @@ router
   .route("/")
   .get(usersController.getAllUsers)
 
+
 module.exports = router;

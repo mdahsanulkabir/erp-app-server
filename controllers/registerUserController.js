@@ -12,7 +12,8 @@ const handleNewUser = async (req, res) => {
         deptId,
         roles,
         password,
-        refreshToken
+        refreshToken,
+        comment = 'new user'
     } = req.body;
     if (!userEmail || !password) return res.status(400).json({ 'message': 'Username and password are required.' });
 
@@ -39,6 +40,7 @@ const handleNewUser = async (req, res) => {
                     connect: roles.map(role => ({ id: role }))
                 },
                 password : hashedPwd,
+                comment,
                 refreshToken: { set: refreshToken }
             },
             include: {

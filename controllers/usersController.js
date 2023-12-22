@@ -5,7 +5,8 @@ const getAllUsers = async (req, res) => {
     try {
         const allUsers = await prisma.user.findMany({
             include: {
-                roles: true
+                roles: true,
+                userDepartment: true
             }
         })
         res.status(200).json(allUsers)
@@ -38,7 +39,26 @@ const updateUser = async (req, res) => {
     }
 }
 
+const updateUserStatus = async (req, res) => {
+    const {id, status} = req.body;
+    console.log({id, status})
+    try {
+        const updateUser = await prisma.user.update({
+            where: {
+                id: id,
+            },
+            data: {
+                status
+            },
+        })
+        res.status(200).json(updateUser)
+    } catch (err) {
+        res.status(500).json({ 'message': err.message });
+    }
+}
+
 module.exports = {
     getAllUsers,
-    updateUser
+    updateUser,
+    updateUserStatus
 }

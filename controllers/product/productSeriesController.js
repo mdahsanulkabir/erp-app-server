@@ -5,12 +5,12 @@ const createProductSeries = async (req, res) => {
   const { seriesName } = req.body;
   console.log(seriesName);
 
-  // const duplicateProductCapacityUnit = await prisma.productCapacityUnit.findUnique({
-  //     where: {
-  //         productCapacityUnit,
-  //     },
-  // })
-  // if (duplicateProductCapacityUnit) return res.status(409).json({ 'Message': "Duplicate Product Capacity Unit found." });
+  const duplicateProductSeriesCategory = await prisma.seriesCategory.findUnique({
+      where: {
+          seriesName,
+      },
+  })
+  if (duplicateProductSeriesCategory) return res.status(409).json({ 'Message': "Duplicate Product Series found." });
 
   try {
     const newProductSeries = await prisma.seriesCategory.create({

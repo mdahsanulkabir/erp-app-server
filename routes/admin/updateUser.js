@@ -6,6 +6,8 @@ const verifyRoles = require('../../middleware/auth/verifyRoles')
 
 router
   .route("/")
-  .post(verifyRoles(5001), usersController.updateUser)
+  .post(verifyRoles(3001), usersController.updateUser)
+
+  router.patch("/userStatus", verifyRoles(3001), usersController.updateUserStatus)
 
 module.exports = router;

@@ -2,18 +2,20 @@ const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
 const createSKU = async (req, res) => {
-  const { skuCode,
+  const { 
+    skuCode,
     productVariantId,
     productBaseId,
     productCapacity,
     seriesCategoryId,
-    feature,
-    picture1,
-    picture2,
-    picture3,
-    picture4,
-    picture5 } = req.body;
-  console.log({skuCode,
+    feature = null,
+    picture1 = "",
+    picture2 = "",
+    picture3 = "",
+    picture4 = "",
+    picture5 = "" } = req.body;
+  console.log({
+    skuCode,
     productVariantId,
     productBaseId,
     productCapacity: parseInt(productCapacity),
@@ -25,17 +27,18 @@ const createSKU = async (req, res) => {
     picture4,
     picture5});
 
-  // const duplicateProductCapacityUnit = await prisma.productCapacityUnit.findUnique({
-  //     where: {
-  //         productCapacityUnit,
-  //     },
-  // })
-  // if (duplicateProductCapacityUnit) return res.status(409).json({ 'Message': "Duplicate Product Capacity Unit found." });
+  const duplicateSKU = await prisma.sKU.findUnique({
+      where: {
+        skuCode,
+      },
+  })
+  if (duplicateSKU) return res.status(409).json({ 'Message': "Duplicate SKU found." });
 
   try {
     const newSKU = await prisma.sKU.create({
       data: {
         skuCode,
+        skuSAPCode: skuCode,
         variant: {
             connect: {
                 id: productVariantId,
@@ -52,7 +55,6 @@ const createSKU = async (req, res) => {
                 id: seriesCategoryId
             }
         },
-
       },
       include: {
         variant: true,

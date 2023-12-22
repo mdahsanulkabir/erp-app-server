@@ -13,11 +13,12 @@ const getAllDepartments = async (req, res) => {
 
 const createDepartment = async (req, res) => {
     console.log(req.body)
-    const { departmentName } = req.body;
+    const { departmentName, description='none' } = req.body;
     try {
         const newDepartment = await prisma.department.create({
             data: {
-                departmentName
+                departmentName,
+                description
             },
         })
         console.log({...newDepartment})
@@ -27,7 +28,44 @@ const createDepartment = async (req, res) => {
     }
 }
 
+const deleteDepartment = async (req, res) => {
+    console.log(req.body)
+    const { id } = req.body;
+    try {
+        const deletedDepartment = await prisma.department.delete({
+            where: {
+                id
+            },
+        })
+        console.log({...deletedDepartment})
+        res.status(201).json({ 'success': `Department deleted!`, deletedDepartment });
+    } catch (err) {
+        res.status(500).json({ 'message': err.message });
+    }
+}
+
+const updateDepartment = async (req, res) => {
+    console.log(req.body);
+    const { id, dataForUpdate } = req.body;
+    try {
+        const updatedDepartment = await prisma.department.update({
+            where: {
+                id
+            },
+            data: {
+                ...dataForUpdate
+            }
+        })
+        console.log({...updatedDepartment})
+        res.status(201).json({ 'success': `Department Updated!`, updatedDepartment });
+    } catch (err) {
+        res.status(500).json({ 'message': err.message });
+    }
+}
+
 module.exports = {
     getAllDepartments,
-    createDepartment
+    createDepartment,
+    deleteDepartment,
+    updateDepartment
 }
