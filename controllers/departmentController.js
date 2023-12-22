@@ -14,6 +14,12 @@ const getAllDepartments = async (req, res) => {
 const createDepartment = async (req, res) => {
     console.log(req.body)
     const { departmentName, description='none' } = req.body;
+    const duplicateDepartment = await prisma.department.findUnique({
+        where: {
+            departmentName,
+        },
+    })
+    if (duplicateDepartment) return res.status(409).json({ 'Message': "Duplicate Department found." });
     try {
         const newDepartment = await prisma.department.create({
             data: {
