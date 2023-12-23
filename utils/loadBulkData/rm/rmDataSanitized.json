@@ -1,0 +1,186 @@
+[
+ {
+  "objectId": 9732070,
+  "sisCode": "RMMRF-HI650-9732070",
+  "sapCode": 9732070,
+  "objectName": "HIPS-NAT-I-HB-FDA",
+  "alternativeName": "Injection HIPS",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 9712055,
+  "sisCode": "RMMRF-BC03BS-9712055",
+  "sapCode": 9712055,
+  "objectName": "PPCO-NAT-I-HB-HG-FDA",
+  "alternativeName": "PP",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 9730010,
+  "sisCode": "RMMRF-GP110-9730010",
+  "sapCode": 9730010,
+  "objectName": "GPPS-NAT-I-HB-G-FDA",
+  "alternativeName": "GPPS",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 9761080,
+  "sisCode": "RMMRF-GA400-6E47W",
+  "sapCode": 9761080,
+  "objectName": "ABS-P1-I-HB-UV-HG-FDA",
+  "alternativeName": "ABS White",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 9763610,
+  "sisCode": "RMMRF-GA400-5200",
+  "sapCode": 9763610,
+  "objectName": "ABS-BLK-I-HB",
+  "alternativeName": "ABS Black",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 9710030,
+  "sisCode": "RMMRF-PLASTIC-MB-9710030",
+  "sapCode": 9710030,
+  "objectName": "MB-PP-I-NAT-PP-FR%8",
+  "alternativeName": "FR 8%",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 973936,
+  "sisCode": "RMMRF-PLASTIC-MB-973936",
+  "sapCode": 973936,
+  "objectName": "MB-PE-I-PBLK7C-BLK-POM",
+  "alternativeName": "POM MB",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 974000,
+  "sisCode": "RMMRF-PLASTIC-MB-974000",
+  "sapCode": 974000,
+  "objectName": "MB-HIPS-I-R7037-GRY-HIPS",
+  "alternativeName": "HIPS GRAY MB",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 9734640,
+  "sisCode": "RMMRF-PLASTIC-MB-9734640",
+  "sapCode": 9734640,
+  "objectName": "MB-PP-I-P1-WH-PP",
+  "alternativeName": "PP White MB",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 9734701,
+  "sisCode": "RMMRF-PLASTIC-MB-9734701",
+  "sapCode": 9734701,
+  "objectName": "MB-PS-I-P1-WH-PS",
+  "alternativeName": "HIPS White MB",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 9738380,
+  "sisCode": "RMMRF-PLASTIC-MB-9738380",
+  "sapCode": 9738380,
+  "objectName": "MB-GPPS-I-T605-1-3-BLU-GPPS",
+  "alternativeName": "GPPS Blue MB",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 9730310,
+  "sisCode": "RMMRF-PLASTIC-9730310",
+  "sapCode": 9730310,
+  "objectName": "HIPS-NAT-I-V0-NG",
+  "alternativeName": "HIPS V0",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 1502407,
+  "sisCode": "RMMRF-PLASTIC-1502407",
+  "sapCode": 1502407,
+  "objectName": "POM-TF20-NAT-I-HB",
+  "alternativeName": "POM-TF20",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 9732121,
+  "sisCode": "RMMRF-PLASTIC-9732121",
+  "sapCode": 9732121,
+  "objectName": "PA6.6-NAT-I-L-V2",
+  "alternativeName": "Nylon",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 9732190,
+  "sisCode": "RMMRF-LINER-HIPS-CAP01",
+  "sapCode": 9732190,
+  "objectName": "Cap Layer 1",
+  "alternativeName": "Liner Cap1",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 9732200,
+  "sisCode": "RMMRF-LINER-HIPS-CAP02",
+  "sapCode": 9732200,
+  "objectName": "Cap Layer 2",
+  "alternativeName": "Liner Cap2",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 9710300,
+  "sisCode": "RMMRF-PLASTIC-9710300",
+  "sapCode": 9710300,
+  "objectName": "POMCO-NAT-I-HB-FDA",
+  "alternativeName": "POMCO",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 9734700,
+  "sisCode": "RMMRF-LINER-MB",
+  "sapCode": 9734700,
+  "objectName": "Master Batch Liner",
+  "alternativeName": "Liner MB",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 5875400100,
+  "sisCode": "RMMRF-GASKET-PVC-COMPOUND",
+  "sapCode": 5875400100,
+  "objectName": "PVC Compound",
+  "alternativeName": "PVC",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 5875390100,
+  "sisCode": "RMMRF-MAGNETIC-STRIPS",
+  "sapCode": 5875390100,
+  "objectName": "Magnet",
+  "alternativeName": "Magnet",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 8107,
+  "sisCode": "RMMRF-SISANS9577-MB-HIPS",
+  "sapCode": 8107,
+  "objectName": "MB-HIPS-Sisan-SY-9577- XLBD-CPMC\/CP-8107 BLK",
+  "alternativeName": "Sisan HIPS MB",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 9732100,
+  "sisCode": "RMMRF-LINER-HIPS-1175",
+  "sapCode": 9732100,
+  "objectName": "Main Layer",
+  "alternativeName": "Liner HIPS",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ },
+ {
+  "objectId": 9712644,
+  "sisCode": "RMMRF-9712644-PPV0-5VA",
+  "sapCode": 9712644,
+  "objectName": "PP-V0-5VA",
+  "alternativeName": "PP V0",
+  "rmUnitId": "1fc3d09b-0a84-4b9f-8fcc-abbb3d2ed962"
+ }
+]

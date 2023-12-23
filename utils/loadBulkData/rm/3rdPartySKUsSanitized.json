@@ -1,0 +1,1026 @@
+[
+ {
+  "objectId": 5849980100,
+  "sisCode": "RMMRF-5849980100-D-RACK55",
+  "sapCode": 5849980100,
+  "objectName": "DOOR_RACK_FF_55MM_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5849990100,
+  "sisCode": "RMMRF-5849990100-D-RACK50",
+  "sapCode": 5849990100,
+  "objectName": "DOOR_RACK_FF_50MM_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5850000100,
+  "sisCode": "RMMRF-5850000100-DRACK100",
+  "sapCode": 5850000100,
+  "objectName": "DOOR_RACK_FF_100MM_56CM_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5850170100,
+  "sisCode": "RMMRF-CRS-D56-5850170100",
+  "sapCode": 5850170100,
+  "objectName": "CRISPER_DRAWER_BODY_D56230",
+  "alternativeName": "D56 Crisper Body",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5850180100,
+  "sisCode": "RMMRF-CRS-K56-5850180100",
+  "sapCode": 5850180100,
+  "objectName": "CRISPER_BODY_K56250",
+  "alternativeName": "K56 Crisper Body",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5850400100,
+  "sisCode": "RMMRF-BTM-WAL-5850400100",
+  "sapCode": 5850400100,
+  "objectName": "PLS_BOTTOM_WALL",
+  "alternativeName": "PLS Bottom Wall",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5850420100,
+  "sisCode": "RMMRF-5850420100-B-STD",
+  "sapCode": 5850420100,
+  "objectName": "BASE_STAND",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5850430100,
+  "sisCode": "RMMRF-5850430100-B-DRWAR",
+  "sapCode": 5850430100,
+  "objectName": "BASE_DRAWER",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5850440100,
+  "sisCode": "RMMRF-5850440100-B-STD-S",
+  "sapCode": 5850440100,
+  "objectName": "BASE_STAND_SEPARATOR",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5848680100,
+  "sisCode": "RMMRF-5848680100-BTL-HLDR",
+  "sapCode": 5848680100,
+  "objectName": "BOTTLE_HOLDER_BANG_2.25_L",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5848810100,
+  "sisCode": "RMMRF-ICE-TRY-5848810100",
+  "sapCode": 5848810100,
+  "objectName": "ICE_TRAY_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5851970100,
+  "sisCode": "RMMRF-5851970100-BTN-DSBC",
+  "sapCode": 5851970100,
+  "objectName": "BUTTON DOOR SWITCH BACK COVER",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5851980100,
+  "sisCode": "RMMRF-5851980100-CD-BX-HG",
+  "sapCode": 5851980100,
+  "objectName": "CARD_BOX_HOUSING_U_1_MINI",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5851990100,
+  "sisCode": "RMMRF-5851990100-T-HLDR",
+  "sapCode": 5851990100,
+  "objectName": "TUBE HOLDER_40MM",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5852010100,
+  "sisCode": "RMMRF-PLS-NUT-5852010100",
+  "sapCode": 5852010100,
+  "objectName": "PLASTIC_NUT",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5852060100,
+  "sisCode": "RMMRF-ADJS-FT-5852060100",
+  "sapCode": 5852060100,
+  "objectName": "ADJUSTABLE_FOOT_PLASTIC",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5852070100,
+  "sisCode": "RMMRF-FLNG-HL-5852070100",
+  "sapCode": 5852070100,
+  "objectName": "FLANGE_HOLE_PLUG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5852110100,
+  "sisCode": "RMMRF-5852110100-EVPRN-TR",
+  "sapCode": 5852110100,
+  "objectName": "EVAPORATION_TRAY_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5852120100,
+  "sisCode": "RMMRF-5852120100-BLU-I-CV",
+  "sapCode": 5852120100,
+  "objectName": "BLUE_ILLUMINATION_COVER",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5852160100,
+  "sisCode": "RMMRF-LMN-TRY-5852160100",
+  "sapCode": 5852160100,
+  "objectName": "EGG_ICE_LEMON_TRAY",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5852170100,
+  "sisCode": "RMMRF-5852170100-FLTR-BDY",
+  "sapCode": 5852170100,
+  "objectName": "BOTTLE_SEPERATOR",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5852180100,
+  "sisCode": "RMMRF-5852180100-FLTR-CVR",
+  "sapCode": 5852180100,
+  "objectName": "FILTER_COVER",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5852220100,
+  "sisCode": "RMMRF-ICE-TRY-5852220100",
+  "sapCode": 5852220100,
+  "objectName": "ASEAN_ICE_CUBE_TRAY",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5852310100,
+  "sisCode": "RMMRF-5852310100-CM-BK-CV",
+  "sapCode": 5852310100,
+  "objectName": "COMP_BACK_COVER_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5853570100,
+  "sisCode": "RMMRF-DRN-ADP-5853570100",
+  "sapCode": 5853570100,
+  "objectName": "WATER_DRAIN_ADAPTER_FF",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5851240100,
+  "sisCode": "RMMRF-K56-FRZ-5851240100",
+  "sapCode": 5851240100,
+  "objectName": "K56_FRZ_DRAWER_BODY_200MM",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5851250100,
+  "sisCode": "RMMRF-FRZ-K56-5851250100",
+  "sapCode": 5851250100,
+  "objectName": "DRAWER_BODY_FRZ_145MM_K56_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5851280100,
+  "sisCode": "RMMRF-5851280100-D-CAP200",
+  "sapCode": 5851280100,
+  "objectName": "K56_FRZ_DRW_CAP_200MM",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5851290100,
+  "sisCode": "RMMRF-5851290100-D-CAP145",
+  "sapCode": 5851290100,
+  "objectName": "K56_FRZ_DRAWER_CAP_145MM",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5851690100,
+  "sisCode": "RMMRF-5851690100-EFSH-T-K",
+  "sapCode": 5851690100,
+  "objectName": "EVERFRESH_TOP_K56",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5851700100,
+  "sisCode": "RMMRF-5851700100-EFSH-B-K",
+  "sapCode": 5851700100,
+  "objectName": "EVERFRESH_BOTTOM_K56",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5851260100,
+  "sisCode": "RMMRF-5851260100-EFSH-T-D",
+  "sapCode": 5851260100,
+  "objectName": "EVERFRESH_TOP_D56",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5851270100,
+  "sisCode": "RMMRF-5851270100-EFSH-B-D",
+  "sapCode": 5851270100,
+  "objectName": "EVERFRESH_BOTTOM_D56",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5852130100,
+  "sisCode": "RMMRF-TERMOST-5852130100",
+  "sapCode": 5852130100,
+  "objectName": "LED_TERMOSTAT_COVER (Type 1)",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5852130200,
+  "sisCode": "RMMRF-TERMOST-5852130200",
+  "sapCode": 5852130200,
+  "objectName": "LED_TERMOSTAT_COVER (Type 2)",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5852140100,
+  "sisCode": "RMMRF-5852140100-LTC-L-CP",
+  "sapCode": 5852140100,
+  "objectName": "LTC_LED_CAP",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5852150100,
+  "sisCode": "RMMRF-5852150100-LTC-BTN",
+  "sapCode": 5852150100,
+  "objectName": "LTC_BUTTON",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5852190100,
+  "sisCode": "RMMRF-U-D-T-P-5852190100",
+  "sapCode": 5852190100,
+  "objectName": "UPPER_DOOR_TOP_CAP_HINGE_PIN_HOUSING",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5852210100,
+  "sisCode": "RMMRF-H-CLSER-5852210100",
+  "sapCode": 5852210100,
+  "objectName": "FRZ_DOOR_HINGE_CLOSER",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5851910100,
+  "sisCode": "RMMRF-PPE-PIT-5851910100",
+  "sapCode": 5851910100,
+  "objectName": "FIXER CONDENSER PIPE PIT 60",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5851630100,
+  "sisCode": "RMMRF-T-HNG-C-5851630100",
+  "sapCode": 5851630100,
+  "objectName": "TOP_HINGE_COVER_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5850880100,
+  "sisCode": "RMMRF-GLS-PRF-5850880100",
+  "sapCode": 5850880100,
+  "objectName": "GLASS_SHELF_BACK_PROFILE_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5851350100,
+  "sisCode": "RMMRF-GLS-PRF-5851350100",
+  "sapCode": 5851350100,
+  "objectName": "GLASS_SHELF_BACK_PROFILE_FRZ_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5827290100,
+  "sisCode": "RMMRF-U-D-T-C-5827290100",
+  "sapCode": 5827290100,
+  "objectName": "UPPER_DOOR_TOP_CAP_56CM_GD_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5827330100,
+  "sisCode": "RMMRF-U-D-B-C-5827330100",
+  "sapCode": 5827330100,
+  "objectName": "UPPER_DOOR_BOTTOM_CAP_56CM_GD_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5827310100,
+  "sisCode": "RMMRF-L-D-T-C-5827310100",
+  "sapCode": 5827310100,
+  "objectName": "LOWER_DOOR_TOP_CAP_56CM_GD_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5827330200,
+  "sisCode": "RMMRF-B-D-B-C-5827330200",
+  "sapCode": 5827330200,
+  "objectName": "BOTTOM_DOOR_BOTTOM_CAP_56CM_GD_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5862521000,
+  "sisCode": "RMMRF-5862521000-DYKE-D56",
+  "sapCode": 5862521000,
+  "objectName": "D56_FRZ_DYKE_SUP",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5862530100,
+  "sisCode": "RMMRF-5862530100-DYKE-K56",
+  "sapCode": 5862530100,
+  "objectName": "K56_FRZ_UPPER_DYKE_SUP_LEFT",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5862530200,
+  "sisCode": "RMMRF-5862530200-DYKE-K56",
+  "sapCode": 5862530200,
+  "objectName": "K56_FRZ_UPPER_DYKE_SUP_RIGHT",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5862540100,
+  "sisCode": "RMMRF-5862540100-DYKE-K56",
+  "sapCode": 5862540100,
+  "objectName": "K56_BOTTOM_DYKE_SUP_LEFT",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5862540200,
+  "sisCode": "RMMRF-5862540200-DYKE-K56",
+  "sapCode": 5862540200,
+  "objectName": "K56_BOTTOM_DYKE_SUP_RIGHT",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5864680100,
+  "sisCode": "RMMRF-5864680100-W-DRNK56",
+  "sapCode": 5864680100,
+  "objectName": "WATER_DRAIN_ ADAPTER_FF_COMBI",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860700100,
+  "sisCode": "RMMRF-5860700100-B-S-S-51",
+  "sapCode": 5860700100,
+  "objectName": "BASE_STAND_SEPARATOR_D51_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860860100,
+  "sisCode": "RMMRF-5860860100-BSTND-51",
+  "sapCode": 5860860100,
+  "objectName": "BASE_STAND_D51_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860870100,
+  "sisCode": "RMMRF-5860870100-BDRWR-51",
+  "sapCode": 5860870100,
+  "objectName": "BASE_DRAWER_D51_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860740100,
+  "sisCode": "RMMRF-5860740100-FRZ-GLSS",
+  "sapCode": 5860740100,
+  "objectName": "GLASS_SHELF_BACK_PROFILE_FRZ_51CM_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860750100,
+  "sisCode": "RMMRF-5860750100-FF-GLSS",
+  "sapCode": 5860750100,
+  "objectName": "GLASS_SHELF_BACK_PROFILE_FF_51CM_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5861190100,
+  "sisCode": "RMMRF-5861190100-THRM-BOX",
+  "sapCode": 5861190100,
+  "objectName": "TERMOSTAT_BOX",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5861200100,
+  "sisCode": "RMMRF-5861200100-THR-KNOB",
+  "sapCode": 5861200100,
+  "objectName": "THERMOSTAT_KNOB",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5861210100,
+  "sisCode": "RMMRF-5861210100-THRM-L-C",
+  "sapCode": 5861210100,
+  "objectName": "LTK_LED_CAP",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5861310100,
+  "sisCode": "RMMRF-5861310100-B-S-HOUS",
+  "sapCode": 5861310100,
+  "objectName": "HOUSING_FOR_BASE_STAND",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860720100,
+  "sisCode": "RMMRF-5860720100-DRACK100",
+  "sapCode": 5860720100,
+  "objectName": "DOOR_RACK_FF_51CM_100MM_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860840100,
+  "sisCode": "RMMRF-5860840100-C-DRWR51",
+  "sapCode": 5860840100,
+  "objectName": "CRISPER_D51",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860640100,
+  "sisCode": "RMMRF-5860640100-UDTC-51",
+  "sapCode": 5860640100,
+  "objectName": "UPPER_DOOR_TOP_CAP_51CM_GD_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860650100,
+  "sisCode": "RMMRF-5860650100-LDBC-51",
+  "sapCode": 5860650100,
+  "objectName": "UPPER_DOOR_Bottom_CAP_51CM_GD_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860660100,
+  "sisCode": "RMMRF-5860660100-LDTC-51",
+  "sapCode": 5860660100,
+  "objectName": "LOWER_DOOR_TOP_CAP_51CM_GD_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860650200,
+  "sisCode": "RMMRF-5860650200-UDBC-51",
+  "sapCode": 5860650200,
+  "objectName": "Bottom_DOOR_Bottom_CAP_51CM_GD_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860710100,
+  "sisCode": "RMMRF-5860710100-D-RACK50",
+  "sapCode": 5860710100,
+  "objectName": "DOOR_RACK_FF_51CM_50MM_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860730100,
+  "sisCode": "RMMRF-5860730100-D-RACK55",
+  "sapCode": 5860730100,
+  "objectName": "DOOR_RACK_FF_51CM_55MM_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5861160100,
+  "sisCode": "RMMRF-5861160100-SP-SUP51",
+  "sapCode": 5861160100,
+  "objectName": "51CM_SIDE_PANEL_SUPPORT_RHS",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5861160200,
+  "sisCode": "RMMRF-5861160200-P-SUP-51",
+  "sapCode": 5861160200,
+  "objectName": "51CM_SIDE_PANEL_SUPPORT_LHS",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5861350100,
+  "sisCode": "RMMRF-5861350100-AMT-SPCR",
+  "sapCode": 5861350100,
+  "objectName": "AMT Spacer",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860670100,
+  "sisCode": "RMMRF-5860670100-UDTCFH51",
+  "sapCode": 5860670100,
+  "objectName": "UPPER DOOR TOP CAP FH",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860680100,
+  "sisCode": "RMMRF-5860680100-UDLCFH51",
+  "sapCode": 5860680100,
+  "objectName": "UPPER DOOR LOWER CAP FH",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860690100,
+  "sisCode": "RMMRF-5860690100-LDUCFH51",
+  "sapCode": 5860690100,
+  "objectName": "LOWER DOOR UPPER CAP FH",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860680200,
+  "sisCode": "RMMRF-5860680200-LDLCFH51",
+  "sapCode": 5860680200,
+  "objectName": "LOWER DOOR LOWER CAP FH",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5861240100,
+  "sisCode": "RMMRF-5861240100-BDWRFH51",
+  "sapCode": 5861240100,
+  "objectName": "BASE DRAWER D51 FH",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5859150100,
+  "sisCode": "RMMRF-5859150100-UDTC-VCM",
+  "sapCode": 5859150100,
+  "objectName": "UPPER_DOOR_TOP_CAP_56CM_VCM_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5859160100,
+  "sisCode": "RMMRF-5859160100-UDBC-VCM",
+  "sapCode": 5859160100,
+  "objectName": "UPPER_DOOR_BOTTOM_CAP_56CM_VCM_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5859170100,
+  "sisCode": "RMMRF-5859170100-LDTC-VCM",
+  "sapCode": 5859170100,
+  "objectName": "LOWER_DOOR_TOP_CAP_56CM_VCM_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5859160200,
+  "sisCode": "RMMRF-5859160200-LDBC-VCM",
+  "sapCode": 5859160200,
+  "objectName": "BOTTOM_DOOR_BOTTOM_CAP_56CM_VCM_BANG",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5862510100,
+  "sisCode": "RMMRF-5862510100-DRWR-VCM",
+  "sapCode": 5862510100,
+  "objectName": "VCM_BASE_DRAWER",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5861060100,
+  "sisCode": "RMMRF-5861060100-CRIS-K51",
+  "sapCode": 5861060100,
+  "objectName": "Crisper K51",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5861070100,
+  "sisCode": "RMMRF-5861070100-D-175MMB",
+  "sapCode": 5861070100,
+  "objectName": "FRZ Drawer 175 Body_K51",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5861080100,
+  "sisCode": "RMMRF-5861080100-D-175MMF",
+  "sapCode": 5861080100,
+  "objectName": "FRZ Drawer 175 Cap_K51",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5861090100,
+  "sisCode": "RMMRF-5861090100-D-200MMB",
+  "sapCode": 5861090100,
+  "objectName": "FRZ Drawer 200 Body_K51",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5861100100,
+  "sisCode": "RMMRF-5861100100-D-200MMF",
+  "sapCode": 5861100100,
+  "objectName": "FRZ Drawer 200 Cap_K51",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 6100210100,
+  "sisCode": "RMMRF-GASKETFF-6100210100",
+  "sapCode": 6100210100,
+  "objectName": "GASKET_FF_D56230",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 6100210200,
+  "sisCode": "RMMRF-GASKETFZ-6100210200",
+  "sapCode": 6100210200,
+  "objectName": "GASKET_FRZ_D56230",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 6100210300,
+  "sisCode": "RMMRF-GRAY-FF-6100210300",
+  "sapCode": 6100210300,
+  "objectName": "GASKET_FF_K56260   ",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 6100210400,
+  "sisCode": "RMMRF-GRAY-FRZ-6100210400",
+  "sapCode": 6100210400,
+  "objectName": "GASKET_FRZ_K56260   ",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 6100210800,
+  "sisCode": "RMMRF-6100210800-GSKT-FRZ",
+  "sapCode": 6100210800,
+  "objectName": "GASKET_GR_LIGHT_GRAY_FRZ_D51185",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 6100210700,
+  "sisCode": "RMMRF-6100210700-GSKT-FF",
+  "sapCode": 6100210700,
+  "objectName": "GASKET_GR_LIGHT_GRAY_FF_D51185",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 6100210500,
+  "sisCode": "RMMRF-6100210500-G-FFD155",
+  "sapCode": 6100210500,
+  "objectName": "GASKET_GR_LIGHT_GRAY_FF_D51155",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 6100210600,
+  "sisCode": "RMMRF-6100210600-GFRZD155",
+  "sapCode": 6100210600,
+  "objectName": "GASKET_GR_LIGHT_GRAY_FRZ_D51155",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 6100210900,
+  "sisCode": "RMMRF-6100210900-G-FFD200",
+  "sapCode": 6100210900,
+  "objectName": "GASKET_GR_LIGHT_GRAY_FF_D51200",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 6100211000,
+  "sisCode": "RMMRF-6100211000-GFRZD200",
+  "sapCode": 6100211000,
+  "objectName": "GASKET_GR_LIGHT_GRAY_FRZ_D51200",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 6100211100,
+  "sisCode": "RMMRF-6100211100-G-FFK185",
+  "sapCode": 6100211100,
+  "objectName": "GASKET_GR_LIGHT_GRAY_FF_K51185",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 6100211200,
+  "sisCode": "RMMRF-6100211200-GFRZK185",
+  "sapCode": 6100211200,
+  "objectName": "GASKET_GR_LIGHT_GRAY_FRZ_K51185",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5769130000,
+  "sisCode": "RMMRF-5769130000-D-LNRD56",
+  "sapCode": 5769130000,
+  "objectName": "DOOR LINER D56",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5769070000,
+  "sisCode": "RMMRF-5769070000-D-LNRK56",
+  "sapCode": 5769070000,
+  "objectName": "DOOR LINER K56",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5769110000,
+  "sisCode": "RMMRF-5769110000-B-LNRD56",
+  "sapCode": 5769110000,
+  "objectName": "BODY LINER D56",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5769050000,
+  "sisCode": "RMMRF-5769050000-B-LNRK56",
+  "sapCode": 5769050000,
+  "objectName": "BODY LINER K56",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": "BODYLINER51185",
+  "sisCode": "RMMRF-BODYLINER51185-SEET",
+  "sapCode": "BODYLINER51185",
+  "objectName": "INNER_LINER_SHEET 1570 x 680 x 3.8",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": "DOORLINER51185",
+  "sisCode": "RMMRF-DOORLINER51185-SEET",
+  "sapCode": "DOORLINER51185",
+  "objectName": "DOOR LINER SHEET 1518 x 666 x 1.3",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5875520100,
+  "sisCode": "RMMRF-5875520100-B-LNR155",
+  "sapCode": 5875520100,
+  "objectName": "INNER_LINER_SHEET 1430 x 680 x 4.5",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5875520300,
+  "sisCode": "RMMRF-5875520300-D-LNR155",
+  "sapCode": 5875520300,
+  "objectName": "DOOR LINER SHEET 1378 x 666 x 1.3",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5875520900,
+  "sisCode": "RMMRF-5875520900-L-D51200",
+  "sapCode": 5875520900,
+  "objectName": "INNER_LINER_SHEET 1690x 680 x 4.5",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5875521100,
+  "sisCode": "RMMRF-5875521100-L-D51200",
+  "sapCode": 5875521100,
+  "objectName": "DOOR LINER SHEET 1638x 666 x 1.3",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5875521300,
+  "sisCode": "RMMRF-5875521300-L-K51185",
+  "sapCode": 5875521300,
+  "objectName": "INNER_LINER_SHEET 1635 x 680 x 4.5",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5875521500,
+  "sisCode": "RMMRF-5875521500-L-K51185",
+  "sapCode": 5875521500,
+  "objectName": "DOOR LINER SHEET 1583 x 666 x 1.3",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5769160100,
+  "sisCode": "RMMRF-5769160100-ST-BW-D",
+  "sapCode": 5769160100,
+  "objectName": "STEEL_BACKWALL_D56230",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5769160200,
+  "sisCode": "RMMRF-5769160200-ST-BW-DC",
+  "sapCode": 5769160200,
+  "objectName": "STEEL_BACKWALL_D56230_U_1_CARD",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5769160300,
+  "sisCode": "RMMRF-5769160300-ST-BW-K",
+  "sapCode": 5769160300,
+  "objectName": "STEEL_BACKWALL_K56260",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5769160400,
+  "sisCode": "RMMRF-5769160400-ST-BW-KC",
+  "sapCode": 5769160400,
+  "objectName": "STEEL_BACKWALL_K56260_U_1_CARD",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5850450100,
+  "sisCode": "RMMRF-COM-TRAV-5850450100",
+  "sapCode": 5850450100,
+  "objectName": "COMPRESSOR_TRAVERSE",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5849750100,
+  "sisCode": "RMMRF-TRAVERSE-5849750100",
+  "sapCode": 5849750100,
+  "objectName": "MIDDLE_TRAVERSE_56CM   ",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5849740100,
+  "sisCode": "RMMRF-TRAV-5849740100",
+  "sapCode": 5849740100,
+  "objectName": "BOTTOM_FRONT_TRAVERSE_56CM",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860810400,
+  "sisCode": "RMMRF-5860810400-S-BCK185",
+  "sapCode": 5860810400,
+  "objectName": "STEEL_BACKWALL_D51185",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860810200,
+  "sisCode": "RMMRF-5860810200-S-BCK155",
+  "sapCode": 5860810200,
+  "objectName": "STEEL_BACKWALL_D51155",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860810600,
+  "sisCode": "RMMRF-5860810600-S-BCK200",
+  "sapCode": 5860810600,
+  "objectName": "STEEL_BACKWALL_D51200",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860820200,
+  "sisCode": "RMMRF-5860820200-SWK51185",
+  "sapCode": 5860820200,
+  "objectName": "STEEL_BACKWALL_K51185",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860770100,
+  "sisCode": "RMMRF-5860770100-MDDL-TRV",
+  "sapCode": 5860770100,
+  "objectName": "MIDDLE_TRAVERSE_51CM_WithLock  ",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5861170100,
+  "sisCode": "RMMRF-5861170100-BTTM-PNL",
+  "sapCode": 5861170100,
+  "objectName": "D51CM_BOTTOM_PANEL",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860800100,
+  "sisCode": "RMMRF-5860800100-COMP-TRV",
+  "sapCode": 5860800100,
+  "objectName": "COMPRESSOR_TRAVERSE_51CM",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860790100,
+  "sisCode": "RMMRF-5860790100-COM-BCOV",
+  "sapCode": 5860790100,
+  "objectName": "COMP_BACK_COVER_51CM",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ },
+ {
+  "objectId": 5860780100,
+  "sisCode": "RMMRF-5860780100-BTTM-TRV",
+  "sapCode": 5860780100,
+  "objectName": "BOTTOM_TRAVERSE_51CM",
+  "alternativeName": "TBD",
+  "rmUnitId": "50f45c93-f1e6-4f1f-a67f-da7b768355a2"
+ }
+]

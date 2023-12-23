@@ -32,8 +32,10 @@ app.use("/department", require("./routes/admin/department"));
 app.use("/role", require("./routes/admin/role"));
 app.use("/updateUser", require("./routes/admin/updateUser"));
 app.use("/product", require("./routes/product/product"));
+app.use("/rm", require("./routes/rmAndBOM/rm.js"));
+app.use("/sfg", require("./routes/rmAndBOM/sfgBOM.js"));
+
 app.use("/utils", require("./utils/loadBulkData/route"));
-app.use("/rm", require("./routes/rmAndBOM/rm"));
 
 app.all("*", (req, res) => {
   res.status(404);

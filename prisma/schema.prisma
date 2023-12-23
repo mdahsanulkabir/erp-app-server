@@ -52,6 +52,10 @@ model User {
   Shipment                  Shipment[]
   ImportPODetails           ImportPODetails[]
   Bank                      Bank[]
+  RmCategory                RmCategory[]
+  HSCode                    HSCode[]
+  RMWastagePercentage       RMWastagePercentage[]
+  SFGBOMComponent           SFGBOMComponent[]
 }
 
 enum UserActiveStatus {
@@ -177,6 +181,19 @@ model RmSource {
   comment       String?
 }
 
+model RmCategory {
+  id                    String    @id @default(uuid())
+  rmCategory            String    @unique
+  rmCategoryDescription String
+  rms                   RM[]
+  createdAt             DateTime  @default(now()) @map("created_at") @db.Timestamptz()
+  User                  User      @relation(fields: [createdBy], references: [id])
+  createdBy             String
+  updatedAt             DateTime? @updatedAt @map("updated_at") @db.Timestamptz()
+  updateReasons         String    @default("new RM category")
+  comment               String?
+}
+
 model RM {
   id                        String                      @id @default(uuid())
   objectId                  String                      @unique
@@ -204,18 +221,32 @@ model RM {
   obsolete                  Boolean                     @default(false)
   ImportRmRequirementDetail ImportRmRequirementDetail[]
   SupplierRM                SupplierRM[]
-  hsCode                    String                      @default("n/a")
-  wastagePercentageForOrder Int?
   MRPBOM                    MRPBOM[]
-  SFGBOMAsSFG               SFGBOM[]                    @relation("SFGRelation")
-  SFGBOMAsComponent         SFGBOM[]                    @relation("ComponentRelation")
+  SFGBOMAsSFG               SFGBOM[]
+  rmCategories              RmCategory[]
+  HSCode                    HSCode[]
+  RMWastagePercentage       RMWastagePercentage[]
+  SFGBOMComponent           SFGBOMComponent[]
 }
 
 model SFGBOM {
+  id            String            @id @default(uuid())
+  sfg           RM                @relation(fields: [sfgObjectId], references: [id]) //! for the starting point, we can consider the SKU as a SFG rm and include in RM table
+  sfgObjectId   String
+  components    SFGBOMComponent[]
+  createdAt     DateTime          @default(now()) @map("created_at") @db.Timestamptz()
+  User          User              @relation(fields: [createdBy], references: [id])
+  createdBy     String
+  updatedAt     DateTime?         @updatedAt @map("updated_at") @db.Timestamptz()
+  updateReasons String            @default("new SFGBOM entry")
+  comment       String?
+}
+
+model SFGBOMComponent {
   id                String    @id @default(uuid())
-  sfg               RM        @relation("SFGRelation", fields: [sfgObjectId], references: [id]) //! for the starting point, we can consider the SKU as a SFG rm and include in RM table
-  sfgObjectId       String
-  component         RM        @relation("ComponentRelation", fields: [componentObjectId], references: [id])
+  sfGBOM            SFGBOM    @relation(fields: [sfGBOMId], references: [id])
+  sfGBOMId          String
+  component         RM        @relation(fields: [componentObjectId], references: [id])
   componentObjectId String
   componentQuantity Float
   createdAt         DateTime  @default(now()) @map("created_at") @db.Timestamptz()
@@ -224,6 +255,18 @@ model SFGBOM {
   updatedAt         DateTime? @updatedAt @map("updated_at") @db.Timestamptz()
   updateReasons     String    @default("new SFGBOM entry")
   comment           String?
+}
+
+model RMWastagePercentage {
+  id                  String    @id @default(uuid())
+  rm                  RM        @relation(fields: [rmId], references: [id])
+  rmId                String
+  rmWastagePercentage Int       @default(2)
+  createdAt           DateTime  @default(now()) @map("created_at") @db.Timestamptz()
+  User                User      @relation(fields: [createdBy], references: [id])
+  createdBy           String
+  updatedAt           DateTime? @updatedAt @map("updated_at") @db.Timestamptz()
+  comment             String?
 }
 
 model MRPBOM {
@@ -320,12 +363,23 @@ model ImportRmRequirementDetail {
   User                     User                   @relation(fields: [createdBy], references: [id])
   createdBy                String
   updatedAt                DateTime?              @updatedAt @map("updated_at") @db.Timestamptz()
-  updateReasons            String                 @default("new requirement")
+  updateReasons            String                 @default("new immport requirement")
   comment                  String?
   ImportPODetails          ImportPODetails[]
 }
 
 // order related tables
+
+model HSCode {
+  id            String    @id @default(uuid())
+  hsCode        String    @unique
+  rms           RM[]
+  createdAt     DateTime  @default(now()) @map("created_at") @db.Timestamptz()
+  User          User      @relation(fields: [createdBy], references: [id])
+  createdBy     String
+  updatedAt     DateTime? @updatedAt @map("updated_at") @db.Timestamptz()
+  updateReasons String    @default("new hscode")
+}
 
 model ImportPO {
   id                         String            @id @default(uuid())
