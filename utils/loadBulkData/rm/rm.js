@@ -4,7 +4,7 @@ const prisma = new PrismaClient();
 const fs = require('fs')
 const path = require('path')
 let rms = []
-fs.readFile(path.join(__dirname, '3rdPartySKUsSanitized.json'), 'utf8', (err, data) => {
+fs.readFile(path.join(__dirname, 'OwnImports.json'), 'utf8', (err, data) => {
   if(err) throw err;
   rms = JSON.parse(data)
 })
@@ -23,7 +23,7 @@ const loadRms = async (req, res) => {
             await prisma.rM.create({
                 data: {
                     objectId: rm.objectId.toString(),
-                    sisCode: rm.sisCode,
+                    sisCode: rm.sisCode.toString(),
                     sapCode: rm.sapCode.toString(),
                     objectName: rm.objectName,
                     alternativeName: rm.alternativeName,

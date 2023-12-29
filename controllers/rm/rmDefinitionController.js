@@ -66,7 +66,20 @@ const createRmDefinition = async (req, res) => {
 
 const getAllRmDefinition = async (req, res) => {
     try {
-        const allRmDefinition = await prisma.rM.findMany()
+        const allRmDefinition = await prisma.rM.findMany({
+            include: {
+                User: {
+                    select: {
+                        userName: true
+                    }
+                },
+                rmUnit: {
+                    select: {
+                        rmUnit: true
+                    }
+                }
+            }
+        })
         res.status(200).json(allRmDefinition)
     } catch (err) {
         res.status(500).json({ 'message': err.message });
