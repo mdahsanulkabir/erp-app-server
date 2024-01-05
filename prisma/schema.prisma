@@ -42,7 +42,7 @@ model User {
   RmSource                  RmSource[]
   RM                        RM[]
   SFGBOM                    SFGBOM[]
-  MRPBOM                    MRPBOM[]
+  MRPBOM                    MRPBOMFIXED[]
   ExternalContact           ExternalContact[]
   Supplier                  Supplier[]
   SupplierRM                SupplierRM[]
@@ -151,7 +151,7 @@ model SKU {
   createdAt        DateTime        @default(now()) @map("created_at") @db.Timestamptz()
   updatedAt        DateTime?       @updatedAt @map("updated_at") @db.Timestamptz()
   updateReasons    String          @default("new sku")
-  MRPBOM           MRPBOM[]
+  MRPBOM           MRPBOMFIXED[]
 }
 
 // raw materials and BOM related tables
@@ -221,7 +221,7 @@ model RM {
   obsolete                  Boolean                     @default(false)
   ImportRmRequirementDetail ImportRmRequirementDetail[]
   SupplierRM                SupplierRM[]
-  MRPBOM                    MRPBOM[]
+  MRPBOM                    MRPBOMFIXED[]
   SFGBOMAsSFG               SFGBOM[]
   rmCategories              RmCategory[]
   HSCode                    HSCode[]
@@ -269,7 +269,7 @@ model RMWastagePercentage {
   comment             String?
 }
 
-model MRPBOM {
+model MRPBOMFIXED {
   id         String    @id @default(uuid())
   SKU        SKU       @relation(fields: [skuCode], references: [id])
   skuCode    String
