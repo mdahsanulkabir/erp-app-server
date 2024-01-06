@@ -286,35 +286,35 @@ model MRPBOMFIXED {
 // supplier related tables
 
 model ExternalContact {
-  id            String     @id @default(uuid())
+  id            String    @id @default(uuid())
   name          String
-  email         String     @unique
+  email         String    @unique
   phone         String
-  Supplier      Supplier[]
-  createdAt     DateTime   @default(now()) @map("created_at") @db.Timestamptz()
-  User          User       @relation(fields: [createdBy], references: [id])
+  Supplier      Supplier  @relation(fields: [supplierId], references: [id])
+  supplierId    String
+  createdAt     DateTime  @default(now()) @map("created_at") @db.Timestamptz()
+  User          User      @relation(fields: [createdBy], references: [id])
   createdBy     String
-  updatedAt     DateTime?  @updatedAt @map("updated_at") @db.Timestamptz()
-  updateReasons String     @default("new supplier contact")
+  updatedAt     DateTime? @updatedAt @map("updated_at") @db.Timestamptz()
+  updateReasons String    @default("new supplier contact")
   comment       String?
 }
 
 model Supplier {
-  id                    String          @id @default(uuid())
-  supplierName          String          @unique
-  supplierAlternateName String          @unique
+  id                    String            @id @default(uuid())
+  supplierName          String            @unique
+  supplierAlternateName String            @unique
   country               String
-  contactPerson         ExternalContact @relation(fields: [externalContactId], references: [id])
-  externalContactId     String
-  createdAt             DateTime        @default(now()) @map("created_at") @db.Timestamptz()
-  User                  User            @relation(fields: [createdBy], references: [id])
+  createdAt             DateTime          @default(now()) @map("created_at") @db.Timestamptz()
+  User                  User              @relation(fields: [createdBy], references: [id])
   createdBy             String
-  updatedAt             DateTime?       @updatedAt @map("updated_at") @db.Timestamptz()
-  updateReasons         String          @default("new supplier")
+  updatedAt             DateTime?         @updatedAt @map("updated_at") @db.Timestamptz()
+  updateReasons         String            @default("new supplier")
   comment               String?
-  supplierNotExist      Boolean         @default(false)
+  supplierNotExist      Boolean           @default(false)
   SupplierRM            SupplierRM[]
   ImportPO              ImportPO[]
+  ExternalContact       ExternalContact[]
 }
 
 model SupplierRM {

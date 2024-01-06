@@ -35,6 +35,7 @@ app.use("/product", require("./routes/product/product"));
 app.use("/rm", require("./routes/rmAndBOM/rm.js"));
 app.use("/sfg", require("./routes/rmAndBOM/sfgBOM.js"));
 app.use('/fixedMRPBOM', require('./routes/rmAndBOM/mrpFixedBOM.js'))
+app.use('/supplier', require('./routes/supplier/supplierInfo.js'))
 
 app.use("/utils", require("./utils/loadBulkData/route"));
 
