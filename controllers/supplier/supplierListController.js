@@ -34,9 +34,9 @@ const createSupplier = async (req, res) => {
                         id: user.id
                     }
                 },
-                include: {
-                    RmSource: true
-                }
+            },
+            include: {
+                RmSource: true
             }
         })
         res.status(201).json({success: `new supplier created`, newSupplier})
