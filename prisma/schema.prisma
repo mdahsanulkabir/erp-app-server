@@ -221,13 +221,13 @@ model RM {
   comment                   String?
   obsolete                  Boolean                     @default(false)
   ImportRmRequirementDetail ImportRmRequirementDetail[]
-  SupplierRM                SupplierRM[]
   MRPBOM                    MRPBOMFIXED[]
   SFGBOMAsSFG               SFGBOM[]
   rmCategories              RmCategory[]
   HSCode                    HSCode[]
   RMWastagePercentage       RMWastagePercentage[]
   SFGBOMComponent           SFGBOMComponent[]
+  SupplierRM                SupplierRM[]
 }
 
 model SFGBOM {
@@ -316,19 +316,28 @@ model Supplier {
   SupplierRM            SupplierRM[]
   ImportPO              ImportPO[]
   ExternalContact       ExternalContact[]
-  RmSource              RmSource?          @relation(fields: [rmSourceId], references: [id])
+  RmSource              RmSource?         @relation(fields: [rmSourceId], references: [id])
   rmSourceId            String?
+}
+
+model Currency {
+  id         String       @id @default(uuid())
+  currency   String
+  SupplierRM SupplierRM[]
 }
 
 model SupplierRM {
   id                        String            @id @default(uuid())
+  RM                        RM                @relation(fields: [objectId], references: [id])
+  objectId                  String
   Supplier                  Supplier          @relation(fields: [supplierId], references: [id])
   supplierId                String
-  RM                        RM[]
   moq                       Int?
   leadTimeToReadinessInDays Int?
   supplierRmUnitConversion  Float             @default(1)
   supplierRmUnit            RmUnit[] // multiply bom/requirement qty with 'supplierRmUnitConversion
+  Currency                  Currency          @relation(fields: [currencyId], references: [id])
+  currencyId                String
   pricePerUnit              Float?
   ImportPODetails           ImportPODetails[]
   createdAt                 DateTime          @default(now()) @map("created_at") @db.Timestamptz()

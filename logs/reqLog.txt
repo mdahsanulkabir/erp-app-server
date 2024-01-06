@@ -7236,3 +7236,10 @@
 20240106	18:27:37	f231a933-4589-4946-a30b-7988f4e86b01	OPTIONS	http://localhost:5173	/rm/rmSource
 20240106	18:27:37	11ce7a1c-c0ac-4c18-84ff-6ef958128dd9	GET	http://localhost:5173	/rm/rmSource
 20240106	18:27:37	12f33deb-dfc5-477c-85f9-33f6c5330d55	GET	http://localhost:5173	/rm/rmSource
+20240106	19:01:52	09f93206-6119-49a6-80eb-02053de0b9f3	GET	undefined	/currency
+20240106	19:02:30	ab15e968-54c5-4592-84a0-75019943a1bb	GET	undefined	/currency
+20240106	19:02:34	14b547be-ef40-4df3-9527-33bebb30b728	POST	undefined	/currency
+20240106	19:02:43	d31acca9-b5f8-4559-acf4-dfb4315905d3	GET	undefined	/currency
+20240106	19:03:04	d084987b-bd48-4b85-987c-a8939defd65f	POST	undefined	/currency
+20240106	19:03:10	16fd8538-4abb-4ade-9d25-c5bbd8425abe	POST	undefined	/currency
+20240106	19:03:15	23bc68ce-d8d2-4dc3-970c-0ad8deeb84ba	GET	undefined	/currency
