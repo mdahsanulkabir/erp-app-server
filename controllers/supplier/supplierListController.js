@@ -2,7 +2,7 @@ const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
 const createSupplier = async (req, res) => {
-    const { supplierName, supplierAlternateName, country } = req.body;
+    const { supplierName, supplierAlternateName, country, rmSourceId } = req.body;
     console.log(req.body)
     const duplicateSupplier = await prisma.supplier.findFirst({
         where: {
@@ -24,10 +24,18 @@ const createSupplier = async (req, res) => {
                 supplierName,
                 supplierAlternateName,
                 country,
+                RmSource: {
+                    connect: {
+                        id: rmSourceId
+                    }
+                },
                 User: {
                     connect: {
                         id: user.id
                     }
+                },
+                include: {
+                    RmSource: true
                 }
             }
         })
@@ -39,7 +47,11 @@ const createSupplier = async (req, res) => {
 
 const getSupplier = async (req, res) => {
     try {
-        const allSuppliers = await prisma.supplier.findMany();
+        const allSuppliers = await prisma.supplier.findMany({
+            include: {
+                RmSource: true
+            }
+        });
         res.status(200).json(allSuppliers);
     } catch (err) {
         res.status(500).json({ message: err.message });

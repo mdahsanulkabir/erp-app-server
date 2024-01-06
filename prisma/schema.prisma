@@ -170,15 +170,16 @@ model RmUnit {
 }
 
 model RmSource {
-  id            String    @id @default(uuid())
-  rmSource      String    @unique //section, 3rd party, import, local, no po
+  id            String     @id @default(uuid())
+  rmSource      String     @unique //section, 3rd party, import, local, no po
   RM            RM[]
-  createdAt     DateTime  @default(now()) @map("created_at") @db.Timestamptz()
-  User          User      @relation(fields: [createdBy], references: [id])
+  createdAt     DateTime   @default(now()) @map("created_at") @db.Timestamptz()
+  User          User       @relation(fields: [createdBy], references: [id])
   createdBy     String
-  updatedAt     DateTime? @updatedAt @map("updated_at") @db.Timestamptz()
-  updateReasons String    @default("new RM source")
+  updatedAt     DateTime?  @updatedAt @map("updated_at") @db.Timestamptz()
+  updateReasons String     @default("new RM source")
   comment       String?
+  Supplier      Supplier[]
 }
 
 model RmCategory {
@@ -315,6 +316,8 @@ model Supplier {
   SupplierRM            SupplierRM[]
   ImportPO              ImportPO[]
   ExternalContact       ExternalContact[]
+  RmSource              RmSource?          @relation(fields: [rmSourceId], references: [id])
+  rmSourceId            String?
 }
 
 model SupplierRM {
@@ -332,7 +335,7 @@ model SupplierRM {
   User                      User              @relation(fields: [createdBy], references: [id])
   createdBy                 String
   updatedAt                 DateTime?         @updatedAt @map("updated_at") @db.Timestamptz()
-  updateReasons             String            @default("new supplier")
+  updateReasons             String            @default("new supplier rm relation")
   comment                   String?
 }
 

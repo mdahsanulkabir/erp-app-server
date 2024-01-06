@@ -77,7 +77,7 @@ const getAllRmDefinition = async (req, res) => {
                     select: {
                         rmUnit: true
                     }
-                }
+                },
             }
         })
         res.status(200).json(allRmDefinition)
