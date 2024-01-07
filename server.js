@@ -37,6 +37,8 @@ app.use("/sfg", require("./routes/rmAndBOM/sfgBOM.js"));
 app.use('/fixedMRPBOM', require('./routes/rmAndBOM/mrpFixedBOM.js'))
 app.use('/supplier', require('./routes/supplier/supplierInfo.js'))
 app.use('/currency', require('./routes/currency/currency.js'))
+app.use('/supplierRm', require('./routes/supplier/supplierRm'))
+app.use('/mrpImport', require('./routes/mrp/mrpImport'))
 
 app.use("/utils", require("./utils/loadBulkData/route"));
 

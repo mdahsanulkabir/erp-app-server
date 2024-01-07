@@ -335,7 +335,8 @@ model SupplierRM {
   moq                       Int?
   leadTimeToReadinessInDays Int?
   supplierRmUnitConversion  Float             @default(1)
-  supplierRmUnit            RmUnit[] // multiply bom/requirement qty with 'supplierRmUnitConversion
+  SupplierRmUnit            RmUnit            @relation(fields: [supplierRmUnitId], references: [id])
+  supplierRmUnitId          String // multiply bom/requirement qty with 'supplierRmUnitConversion
   Currency                  Currency          @relation(fields: [currencyId], references: [id])
   currencyId                String
   pricePerUnit              Float?
