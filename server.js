@@ -10,7 +10,8 @@ const credentials = require("./middleware/credential/credentials.js");
 const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient();
 
-const PORT = process.env.PORT || 5000;
+// const PORT = process.env.PORT || 5000;
+const PORT =5000;
 
 app.use(logger);
 app.use(credentials); //for frontend
