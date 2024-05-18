@@ -11,7 +11,7 @@ const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient();
 
 // const PORT = process.env.PORT || 5000;
-const PORT =5000;
+const PORT = 8000;
 
 app.use(logger);
 app.use(credentials); //for frontend
