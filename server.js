@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.get("/", (req, res) => {
-  res.send("Hello ERP");
+  res.send("Hello ERP \n");
 });
 
 app.use("/login", require("./routes/api/login"));
