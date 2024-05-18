@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
   res.send("Hello ERP \n");
 });
 app.get("/api", (req, res) => {
-  res.send("Hello ERP \n");
+  res.send("Hello ERP/api \n");
 });
 
 app.use("/login", require("./routes/api/login"));
