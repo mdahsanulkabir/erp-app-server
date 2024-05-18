@@ -7471,3 +7471,17 @@
 20240507	07:18:08	f321a171-ff25-4bb6-ad00-b2297a06c406	POST	undefined	/login
 20240507	07:18:57	a9955bb7-1d72-4fb4-b342-6bacac281f35	POST	undefined	/department
 20240507	07:19:31	b3868ae4-d6b0-487d-b360-771053a51db9	POST	undefined	/department
+20240518	09:21:05	b0413a18-8e53-40d7-859d-827dcd468ace	GET	undefined	/
+20240518	09:21:05	d41228b0-6b96-4532-bb49-12d17fde8615	GET	undefined	/favicon.ico
+20240518	09:22:42	aace2654-a3f9-4dfc-a650-024e7283b544	GET	undefined	/
+20240518	09:22:42	81ce6136-6c1a-45b5-885b-dca5417c854f	GET	undefined	/favicon.ico
+20240518	09:22:46	dc5ceeaa-daae-4a8e-80a7-9fdafbd54bc3	GET	undefined	/api
+20240518	09:22:47	532890c3-f059-4813-b036-46de7ed73eaf	GET	undefined	/favicon.ico
+20240518	09:22:52	fc2449b6-335e-4892-ad61-7fd52349280d	GET	undefined	/
+20240518	09:22:52	87b7413e-7762-4d9c-b571-a3099a1ed6ae	GET	undefined	/favicon.ico
+20240518	09:22:58	6b421921-994e-46be-ae81-b9b014da36ab	GET	undefined	/api
+20240518	09:22:58	07e798ec-5b69-4b0b-8079-67672bc7a276	GET	undefined	/favicon.ico
+20240518	09:23:11	5fef8923-2887-469b-98fa-7229efd773c5	GET	undefined	/api
+20240518	09:23:11	6668b68c-bec8-4142-8903-0c9b9dd1e888	GET	undefined	/favicon.ico
+20240518	09:23:13	6e57f8ec-fcaa-4f13-a4f0-dbf3c4605f23	GET	undefined	/
+20240518	09:23:13	509fcf04-8084-42bc-8a7b-6544aec0da2d	GET	undefined	/favicon.ico
