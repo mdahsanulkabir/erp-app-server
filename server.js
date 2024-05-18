@@ -22,6 +22,9 @@ app.use(cookieParser());
 app.get("/", (req, res) => {
   res.send("Hello ERP \n");
 });
+app.get("/api", (req, res) => {
+  res.send("Hello ERP \n");
+});
 
 app.use("/login", require("./routes/api/login"));
 app.use("/refresh", require("./routes/api/refresh.js"));
