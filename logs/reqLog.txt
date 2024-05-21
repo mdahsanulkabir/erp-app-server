@@ -7515,3 +7515,16 @@
 20240518	12:03:14	17ba7c3d-cb95-4211-8139-a280b0d57839	GET	http://localhost:5173	/rm/rmDefinition
 20240518	12:03:14	3136e455-6c48-482b-848e-c71ef2ec5980	GET	http://localhost:5173	/rm/rmDefinition
 20240518	12:04:10	b14840c1-4734-4143-87e0-fb99b97c2419	GET	undefined	/favicon.ico
+20240519	09:29:16	dc8064f4-90d1-4ff8-a8e1-115a5696f131	OPTIONS	http://localhost:5173	/login
+20240519	09:29:16	35cc5a9d-f102-4605-a559-25d4048b6a4b	POST	http://localhost:5173	/login
+20240519	09:31:24	3ba68973-5e84-48ac-9feb-584a91a1a12c	GET	http://localhost:5173	/logout
+20240519	09:31:24	e419422d-33eb-4759-95a7-e395fe284ba9	GET	http://localhost:5173	/refresh
+20240519	09:31:30	50d9779e-63fe-4733-9174-c63764b6d59d	GET	http://localhost:5173	/logout
+20240519	09:31:55	c14de342-2140-4ad9-be21-4cbf164729a6	OPTIONS	http://localhost:5173	/login
+20240519	09:31:55	195b8ee9-5cb1-4b74-9e17-0982140cb8a9	POST	http://localhost:5173	/login
+20240519	09:50:19	7ce666de-7b0e-4b0e-9bf7-2377c42ef79d	OPTIONS	http://localhost:5173	/login
+20240519	09:50:19	0730999f-713b-42bc-aef5-6ddc76324ff1	POST	http://localhost:5173	/login
+20240519	09:51:09	c5ca2777-ac9d-4856-b994-5359b43e1f99	OPTIONS	http://localhost:5173	/login
+20240519	09:51:09	7adbd328-74f7-4f56-83b8-264106714ef8	POST	http://localhost:5173	/login
+20240519	10:01:28	d9e3906a-5a76-4124-b0b3-ae4ebe064f4a	GET	http://localhost:5173	/refresh
+20240519	10:01:29	7a25f434-16bd-41c9-bfe2-8728b4e6e0c3	GET	http://localhost:5173	/refresh
