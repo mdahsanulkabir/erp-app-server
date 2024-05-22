@@ -14,7 +14,7 @@ const PORT = process.env.PORT;
 
 app.use(logger);
 app.use(credentials); //for frontend
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));            //TODO for checking, later must deploy cors safety
 app.use(express.json());
 app.use(cookieParser());
 
