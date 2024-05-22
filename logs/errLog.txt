@@ -129,3 +129,4 @@
 20240518	09:23:11	7b1fd33c-d840-41e3-946e-83fff4057adc	TypeError: Cannot read properties of undefined (reading 'split')
 20240518	09:23:13	d73e517d-be9a-4c1d-a148-4adda3c57556	TypeError: Cannot read properties of undefined (reading 'split')
 20240518	12:04:10	35b231be-7822-45be-8f23-d24a3b797ecd	TypeError: Cannot read properties of undefined (reading 'split')
+20240522	07:27:16	7ab9a307-9da2-4eae-92cf-03c7db232a99	Error: Not allowed by CORS

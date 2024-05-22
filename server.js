@@ -12,8 +12,6 @@ const prisma = new PrismaClient();
 
 const PORT = process.env.PORT;
 
-console.log("mode: ",process.env.MODE)
-
 app.use(logger);
 app.use(credentials); //for frontend
 app.use(cors(corsOptions));

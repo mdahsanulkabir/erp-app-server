@@ -7528,3 +7528,6 @@
 20240519	09:51:09	7adbd328-74f7-4f56-83b8-264106714ef8	POST	http://localhost:5173	/login
 20240519	10:01:28	d9e3906a-5a76-4124-b0b3-ae4ebe064f4a	GET	http://localhost:5173	/refresh
 20240519	10:01:29	7a25f434-16bd-41c9-bfe2-8728b4e6e0c3	GET	http://localhost:5173	/refresh
+20240522	07:27:16	be17dc16-d2ca-4e5a-87db-c0f857793e51	OPTIONS	http://localhost:4173	/login
+20240522	07:28:52	e725cc1a-35d0-4526-b8f6-8f913fe1e65d	OPTIONS	http://localhost:4173	/login
+20240522	07:28:52	3376a49b-9e24-4a86-9f77-cd7a6375e331	POST	http://localhost:4173	/login
